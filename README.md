@@ -1,2 +1,2 @@
 # overleaf_remap_keys
-Use jj ,etc. on overleaf
+Use jj, etc. on overleaf
