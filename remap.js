@@ -16,10 +16,8 @@
         const editor = window._debug_editors[window._debug_editors.length -1]
         // vim keyboard plugin
         const vimKeyboard = window.ace.require("ace/keyboard/vim")
-        // add custom keybindings - insert mode applies on insert
+        // add custom keybindings
         vimKeyboard.Vim.map("jj", "<Esc>", "insert")
-        // normal mode applies while escaped
-        vimKeyboard.Vim.map("h", "j", "normal")
         // set the modified keyboard handler for editor
         editor.setKeyboardHandler(vimKeyboard.handler)
         console.log("Custom key bindings applied")
